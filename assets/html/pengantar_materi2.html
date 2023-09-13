@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/pengantar_materi.css" />
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.css" />
+    <link href="../vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Logo -->
+    <link href="../img/Logo.png" rel="icon">
+
+    <!-- Mathjax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+    <div class="sidebar close">
+        <div class="logo-details">
+            <img src="../img/mathematics.png" alt="Home" style="width: 35px; height: 35px" />
+            <span class="logo_name">Sistem Persamaan</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <div class="icon-link">
+                    <a href="#">
+                        <img src="../img/mathematics.png" alt="mathematics " style="width: 35px; height: 35px" />
+                        <span class="link_name">Pengantar</span>
+                    </a>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="pengantar_materi.html">Pengantar</a></li>
+                    <li><a href="pengantar_materi.html">Sistem Persamaan Linier</a></li>
+                    <li><a href="pengantar_latihan.html">Latihan</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="icon-link">
+                    <a href="#">
+                        <img src="../img/matrix.png" alt="Matriks" style="width: 35px; height: 35px" />
+                        <span class="link_name">Materi 1</span>
+                    </a>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="materi11.html">Materi 1</a></li>
+                    <li><a href="materi11.html">Augmented Matriks</a></li>
+                    <li><a href="materi12.html">OBE</a></li>
+                    <li><a href="#">Latihan</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="icon-link">
+                    <a href="#">
+                        <img src="../img/algebra.png" alt="algebra" style="width: 35px; height: 35px" />
+                        <span class="link_name">Materi 2</span>
+                    </a>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="materi21.html">Materi 2</a></li>
+                    <li><a href="materi21.html">Bentuk Eselon</a></li>
+                    <li><a href="#">Eliminasi Gauss</a></li>
+                    <li><a href="#">Eliminasi Gauss-Jordan</a></li>
+                    <li><a href="#">Latihan</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../img/quiz.png" alt="quiz" style="width: 35px; height: 35px" />
+                    <span class="link_name">Evaluasi</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Evaluasi</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="profile-details">
+                    <div class="profile-content">
+                        <img src="../img/Logo.png" alt="profileImg" />
+                    </div>
+                    <div class="name-job">
+                        <div class="profile_name">Supiani Hasan</div>
+                        <div class="job">Mahasiswa</div>
+                    </div>
+                    <!-- <i class="bx bx-log-out"></i> -->
+                </div>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <div class="home-menu">
+            <i class="bx bx-menu"></i>
+            <span class="text">Sistem Persamaan Linier</span>
+            <a href="../../index.html">
+                <i class="bx bx-home bx-md"></i>
+            </a>
+        </div>
+
+        <div class="container-fluid px-4 my-2 text-end" style="background-color: white">
+            <strong>Sistem Persamaan Linier / Pengantar</strong>
+        </div>
+
+        <div class="card"
+            style="margin: 20px 20px 40px 20px; height: 430px; overflow-x: hidden; overflow-y: auto; border: 3px inset #5c77e6;">
+            <div class="card-body">
+                <h3>Pengantar Sistem Persamaan Linier</h3>
+                <hr>
+                <p class="text">Solusi persamaan linier \(a_1x_1 + a_2x_2 + \dots + a_nx_n = b\) adalah urutan dari
+                    <i>n</i> bilangan \(s_1, s_2, \dots, s_n\) sehingga persamaan tersebut terpenuhi jika
+                    disubstitusikan terhadap \(x_1 = s_1, x_2 = s_2, \dots, x_n = s_n \). Himpunan semua pemecahan
+                    tersebut dinamakan himpunan solusi <i>(solution set)</i> atau sering juga disebut dengan solusi umum
+                    <i>(general solution)</i>.
+                </p>
+                <div class="card" style="border-color: #5c77e6;">
+                    <div class="card-header" style="background-color: #5c77e6;">
+                        <strong class="text-center text-white">Contoh 1</strong>
+
+                    </div>
+                    <div class="card-body">
+                        <p class="text">Carilah himpunan solusi dari \(x_1 - 4x_2 +7x_3 = 5\).</p>
+                        <p class="text"><i>Jawab</i></p>
+                        <p class="text">Untuk mencari himpunan solusi kita dapat menetapkan nilai sembarang untuk dua
+                            variabel dan menyelesaikan persamaan tersebut untuk mencari variabel ketiga. Sebagai contoh,
+                            jika kita menetapkan nilai sembarang <i>s</i> dan <i>t</i> berturut-turut untuk \(x_2\) dan
+                            \(x_3\) dan menyelesaikan persamaan tersebut untuk mencari \(x_1\).
+
+                        </p>
+                        <p class="text">Substitusi \(x_2 = s; x_3 = t\)
+                            \[x_1 - 4s + 7t = 5\]
+                            \[x_1 = 5 + 4s - 7t \]
+                        </p>
+                        <p class="text">
+                            Maka nilai \(x_1 = 5 + 4s - 7t; x_2 = s; x_3 = t\)
+                            Jadi himpunan solusinya adalah {\((5 + 4s - 7t,s,t)|s,t \in
+                            \mathbb{R}\)}
+                        </p>
+                        <p class="text">
+                            Jika kita misalkan \(s = 2\) dan \(t = 1\) maka \(x_1 = 6, x_2 = 2, x_3 = 1\).
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <p class="text"> Sejumlah tertentu persamaan linier dalam variabel \(x_1,x_2,\dots,x_n\) disebut
+                    <i>sistem persamaan linier atau sistem linier.</i> Urutan sejumlah bilangan
+                    \(s_1,s_2,\dots,s_n\) merupakan <i>solusi</i> dari sistem persamaan tersebut jika \(x_1 =
+                    s_1, x_2 = s_2, \dots, x_n = s_n\) merupakan solusi dari setiap persamaan didalam sistem
+                    persamaan tersebut.
+                </p>
+                <!-- <p class="text">\begin{cases}
+                    & 4x_{1}-x_{2}+3x_{3}=-1 \\
+                    & 3x_{1}-x_{2}+9x_{3}=-4
+                    \end{cases}</p> -->
+            </div>
+        </div>
+        <nav aria-label="...">
+            <ul class="pagination me-3 justify-content-end fixed-bottom">
+                <li class="page-item">
+                    <a class="page-link" href="pengantar_materi.html">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="pengantar_materi.html">1</a></li>
+                <li class="page-item active" aria-current="page"><a class="page-link"
+                        href="pengantar_materi2.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="pengantar_latihan.html">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="pengantar_latihan.html">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <script>
+        let arrow = document.querySelectorAll(".arrow");
+        for (var i = 0; i < arrow.length; i++) {
+            arrow[i].addEventListener("click", (e) => {
+                let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
+                arrowParent.classList.toggle("showMenu");
+            });
+        }
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".bx-menu");
+        console.log(sidebarBtn);
+        sidebarBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        });
+    </script>
+</body>
+
+</html>

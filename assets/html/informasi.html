@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS Files -->
+    <link href="../css/informasi.css" rel="stylesheet" />
+    <link href="../vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="../vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- Logo -->
+    <link href="../img/Logo.png" rel="icon">
+
+    <title>Informasi</title>
+</head>
+
+<body>
+    <div class="home-content sticky-top">
+        <span class="text">Sistem Persamaan Linier</span>
+        <a href="../../index.html">
+            <i class="bx bx-home bx-md"></i>
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="card" style="border-radius: 2em;">
+            <div class="row text-center justify-content-center">
+                <div class="col-sm-3">
+                    <button id="btnProfil" type="button" class="button active">Profil</button>
+                </div>
+                <div class="col-sm-3">
+                    <button id="btnPetunjuk" type="button" class="button">
+                        Petunjuk Aplikasi
+                    </button>
+                </div>
+            </div>
+            <div id="profil" class="card-body text-center align-self-center"
+                style="width: 60%; background-color: white; display: block">
+                <span>Media Pembelajaran ini Dibuat Untuk Memenuhi Persyaratan dalam
+                    Menyelesaikan Program Strata-1 Pendidikan Komputer Dengan Judul:
+                </span>
+                <br />
+                <br />
+                <strong>Pengembangan Media Pembelajaran Interaktif Berbasis Web pada Materi
+                    Sistem Persamaan Linier Mata Kuliah Aljabar Linier Dengan Metode
+                    <i>Drill and Practice</i>.</strong>
+                <br />
+                <br />
+                <div class="card-text">
+                    <table style="width: 70%; margin-left: 20%">
+                        <tbody>
+                            <tr>
+                                <td>Nama</td>
+                                <td>:</td>
+                                <td>Muhammad Supiani Hasan</td>
+                            </tr>
+                            <tr>
+                                <td>NIM</td>
+                                <td>:</td>
+                                <td>1910131210008</td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td>:</td>
+                                <td>Hasan.ms029@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>Dosen Pembimbing 1</td>
+                                <td>:</td>
+                                <td>Dr. R. Ati Sukmawati, M.Kom.</td>
+                            </tr>
+                            <tr>
+                                <td>Dosen Pembimbing 2</td>
+                                <td>:</td>
+                                <td>Mitra Pramita, M.Pd.</td>
+                            </tr>
+                            <tr>
+                                <td>Program Studi</td>
+                                <td>:</td>
+                                <td>Pendidikan Komputer</td>
+                            </tr>
+                            <tr>
+                                <td>Fakultas</td>
+                                <td>:</td>
+                                <td>Fakultas Keguruan dan Ilmu Pendidikan</td>
+                            </tr>
+                            <tr>
+                                <td>Instansi</td>
+                                <td>:</td>
+                                <td>Universitas Lambung Mangkurat</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="petunjuk" class="card-body text-center align-self-center"
+                style="width: 60%; background-color: white; display: none">
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt
+                    et, earum velit a eius porro odit tenetur veniam deleniti tempora
+                    at, impedit consequatur tempore, alias asperiores quod reprehenderit
+                    natus commodi. A porro in odio velit reprehenderit saepe sapiente
+                    repellendus ratione assumenda, nisi inventore? Dicta, omnis rerum.
+                    Voluptate veniam non vel incidunt asperiores error et odio
+                    consequatur corrupti quia alias, sint, minus sed. Ad velit eos
+                    repellat veniam accusantium eum consequuntur aut deleniti. Magni eum
+                    placeat laborum quis, minus dolor ex quisquam neque odio amet unde
+                    hic doloribus natus. Eligendi quae nemo quasi voluptate eius eum
+                    obcaecati necessitatibus magnam quidem fuga.
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="fixed-bottom">
+        <div class="container d-md-flex py-4">
+            <div class="me-md-auto text-center text-md-start">
+                <div class="copyright">
+                    &copy;<strong><span>Muhammad Supiani Hasan</span></strong>.
+                </div>
+            </div>
+            <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                <a href="https://www.facebook.com/SupianiHsn" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/nshsm_/" class="instagram"><i class="bx bxl-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Berakhir -->
+
+    <script>
+        var btnProfil = document.getElementById("btnProfil");
+        var btnPetunjuk = document.getElementById("btnPetunjuk");
+
+        btnProfil.addEventListener("click", function () {
+            document.getElementById("profil").style.display = "block";
+            document.getElementById("petunjuk").style.display = "none";
+            btnProfil.classList.add("active");
+            btnPetunjuk.classList.remove("active");
+        });
+
+        btnPetunjuk.addEventListener("click", function () {
+            document.getElementById("profil").style.display = "none";
+            document.getElementById("petunjuk").style.display = "block";
+            btnProfil.classList.remove("active");
+            btnPetunjuk.classList.add("active");
+        });
+    </script>
+</body>
+
+</html>

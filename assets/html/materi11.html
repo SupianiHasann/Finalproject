@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/pengantar_materi.css" />
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.css" />
+    <link href="../vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Logo -->
+    <link href="../img/Logo.png" rel="icon">
+
+    <!-- Mathjax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+    <div class="sidebar close">
+        <div class="logo-details">
+            <img src="../img/mathematics.png" alt="Home" style="width: 35px; height: 35px" />
+            <span class="logo_name">Sistem Persamaan</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <div class="icon-link">
+                    <a href="#">
+                        <img src="../img/mathematics.png" alt="mathematics " style="width: 35px; height: 35px" />
+                        <span class="link_name">Pengantar</span>
+                    </a>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="pengantar_materi.html">Pengantar</a></li>
+                    <li><a href="pengantar_materi.html">Sistem Persamaan Linier</a></li>
+                    <li><a href="pengantar_latihan.html">Latihan</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="icon-link">
+                    <a href="#">
+                        <img src="../img/matrix.png" alt="Matriks" style="width: 35px; height: 35px" />
+                        <span class="link_name">Materi 1</span>
+                    </a>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="materi11.html">Materi 1</a></li>
+                    <li><a href="materi11.html">Augmented Matriks</a></li>
+                    <li><a href="materi12.html">OBE</a></li>
+                    <li><a href="#">Latihan</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="icon-link">
+                    <a href="#">
+                        <img src="../img/algebra.png" alt="algebra" style="width: 35px; height: 35px" />
+                        <span class="link_name">Materi 2</span>
+                    </a>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="materi21.html">Materi 2</a></li>
+                    <li><a href="materi21.html">Bentuk Eselon</a></li>
+                    <li><a href="#">Eliminasi Gauss</a></li>
+                    <li><a href="#">Eliminasi Gauss-Jordan</a></li>
+                    <li><a href="#">Latihan</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../img/quiz.png" alt="quiz" style="width: 35px; height: 35px" />
+                    <span class="link_name">Evaluasi</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Evaluasi</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="profile-details">
+                    <div class="profile-content">
+                        <img src="../img/Logo.png" alt="profileImg" />
+                    </div>
+                    <div class="name-job">
+                        <div class="profile_name">Supiani Hasan</div>
+                        <div class="job">Mahasiswa</div>
+                    </div>
+                    <!-- <i class="bx bx-log-out"></i> -->
+                </div>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <div class="home-menu">
+            <i class="bx bx-menu"></i>
+            <span class="text">Sistem Persamaan Linier</span>
+            <a href="../../index.html">
+                <i class="bx bx-home bx-md"></i>
+            </a>
+        </div>
+
+        <div class="container-fluid px-4 my-2 text-end" style="background-color: white">
+            <strong>Sistem Persamaan Linier / Augmented Matrix</strong>
+        </div>
+
+        <div class="card"
+            style="margin: 20px 20px 40px 20px; height: 430px; overflow-x: hidden; overflow-y: auto;border: 3px inset #5c77e6;">
+            <div class="card-body">
+                <h3>Augmented Matrix</h3>
+                <hr>
+                <p class="text">Jika kita dapat mengingat lokasi-lokasi dari \(+, x, dan =\), maka suatu sistem
+                    persamaan linier yang terdiri dari <i>m</i> persamaan linier dengan <i>n</i> variabel dapat
+                    disingkaat dengan hanya menuliskan deretan bilangan-bilangan dalam jajaran persegi panjang:
+                    \begin{bmatrix}
+                    a_{11} & a_{12} & \dots & a_{1n} & b_{1}\\
+                    a_{21} & a_{22} & \dots & a_{2n} & b_{2}\\
+                    \vdots & \vdots & & \vdots & \vdots\\
+                    a_{m1} & a_{m2} & \dots & a_{mn} & b_{m}
+                    \end{bmatrix} ini dinamakan dengan <i>matriks yang diperbesar(augmented matrix) dari sistem
+                        tersebut.</i></p>
+
+                <center>
+                    <div class="card" style="border: 3px solid #5c77e6; width: fit-content; margin-left: 100px;">
+                        <div class="card-body">
+                            <p>Istilah matriks digunakan dalam matematika untuk menyatakan sebuah jajaran persegi
+                                panjang
+                                dari bilangan-bilangan</p>
+                        </div>
+                    </div>
+                </center>
+
+                <div class="card my-3" style="border-color: #5c77e6;">
+                    <div class="card-header" style="background-color: #5c77e6;">
+                        <strong class="text-center text-white">Contoh 1</strong>
+                    </div>
+                    <div class="card-body">
+                        <p>Sebagai contoh matriks yang diperbesar untuk sistem persamaan linier: \begin{aligned}
+                            x_1 + x_2 + 2x_3 = 9 \\
+                            2x_1 + 4x_2 - 3x_3 = 1 \\
+                            3x_1 + 6x_2 - 5x_3 = 0
+                            \end{aligned}</p>
+                        <p>Sistem persamaan linier diatas memiliki 3 persamaan. Sehingga jika sistem persamaan diubah
+                            kedalam bentuk <i>augmented matrix</i> maka matriks yang dihasilkan akan memiliki
+                            <strong>3 baris.</strong> Sistem persamaan diatas memiliki 3 variabel yaitu \(x_1, x_2,
+                            x_3\) dan 1 buah konstanta. Sehingga matriks yang akan dihasilkan memiliki <strong>4
+                                kolom.</strong> Maka Matriks yang akan dihasilkan berordo 3x4.
+                        </p>
+                        <p>\begin{bmatrix}
+                            1 & 1 & 2 & 9\\
+                            2 & 4 & -3 & 1\\
+                            3 & 6 & -5 & 0 \\
+                            \end{bmatrix}
+                        </p>
+                        <div class="tombol-contoh">
+                            <p>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#contoh1" role="button"
+                                    aria-expanded="false" aria-controls="contoh1">Baris Matriks</a>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#contoh2" aria-expanded="false" aria-controls="contoh2">Kolom
+                                    Matriks</button>
+                            </p>
+                            <div class="row">
+                                <div class="col-5 offset-1">
+                                    <div class="collapse multi-collapse" id="contoh1">
+                                        <div class="card card-body">
+                                            <img src="../img/Contoh 1.jpg" alt="baris matriks">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 offset-1">
+                                    <div class="collapse multi-collapse" id="contoh2">
+                                        <div class="card card-body">
+                                            <img src="../img/Contoh1-1.jpg" alt="kolom matriks">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card my-3" style="border: 3px solid #5c77e6; width: fit-content;">
+                    <div class="card-body">
+                        <p>Ketika Menyusun suatu matriks yang diperbesar, variabel harus dituliskan dalam urutan yang
+                            sama untuk setiap persamaan dan konstanta harus berada pada bagian kolom paling kanan</p>
+                    </div>
+                </div>
+
+                <div class="card my-3" style="border-color: #5c77e6;">
+                    <div class="card-header" style="background-color: #5c77e6;">
+                        <strong class="text-center text-white">Contoh 2</strong>
+                    </div>
+                    <div class="card-body">
+                        <p>Sebagai contoh matriks yang diperbesar untuk sistem persamaan linier: \begin{aligned}
+                            x_1 + 2x_2 = 2 \\
+                            2x_1 + 4x_2 = 5 \\
+                            3x_1 + 6x_2 = 8
+                            \end{aligned}</p>
+                        <p>Ordo matriks : <input class="answer-1 text-center" size="1" type="text"> x
+                            <input class="answer-1 text-center" size="1" type="text">
+
+                        <table>
+                            <tr>
+                                <td style="font-size: 100px;font-weight: lighter;">[</td>
+                                <td>
+                                    <input type='text' size='3' class='answer-1 text-center'>
+                                    <input type='text' size='3' class='answer-1 text-center'>
+                                    <input type='text' size='3' class='answer-1 text-center'>
+                                    <br>
+                                    <input type='text' size='3' class='answer-1 text-center'>
+                                    <input type='text' size='3' class='answer-1 text-center'>
+                                    <input type='text' size='3' class='answer-1 text-center'>
+                                    <br>
+                                    <input type='text' size='3' class='answer-1 text-center'>
+                                    <input type='text' size='3' class='answer-1 text-center'>
+                                    <input type='text' size='3' class='answer-1 text-center'>
+                                </td>
+                                <td style="font-size: 100px;font-weight: lighter;">]</td>
+                            </tr>
+                        </table>
+                        <h6 class="mt-2" id="benar-1"></h6>
+                        <button type="button" id="cek-1" class="btn btn-sm btn-outline-primary mt-2 shadow">Cek
+                            Jawaban</button>
+
+                    </div>
+                </div>
+                <!-- <p class="text"> Metode dasar untuk menyelesaikan sistem persamaan linier adalah dengan menggantikan
+                    sistem yang ada dengan suatu sistem baru yang mempunyai himpunan solusi yang sama tetapi
+                    penyelesaiannya lebih mudah. sistem baru ini biasanya diperoleh melalui beberapa langkah dengan cara
+                    menerapkan tiga jenis tipe operasi berikut untuk mengeliminasi faktor-faktor yang tidak diketahui
+                    secara sistematis.</p>
+                <ol>
+                    <li>Mengalikan persamaan dengan konstanta taknol</li>
+                    <li>mempertukarkan posisi dua persamaan</li>
+                    <li>menambahkan kelipatan satu persamaan ke persamaan lainnya.</li>
+                </ol>
+                <p class="text">Karena baris-baris dari matriks yang diperbesar bersesuaian dengan persamaan-persamaan
+                    dalam sistem yang berkaitan, ketiga operasi ini bersesuaian dengan operasi berikut pada baris-baris
+                    matriks yang diperbesar:</p>
+                <ol>
+                    <li>Mengalikan baris dengan konstanta taknol</li>
+                    <li>Mempertukarkan posisi dua baris</li>
+                    <li>Menambahkan kelipatan suatu baris ke baris lainnya.</li>
+                </ol>
+                <p class="text"> Operasi ini dinamakan dengan <i>Operasi Baris Elementer</i> yang akan dibahas pada
+                    materi selanjutnya.</p>
+                <hr> -->
+
+                <!-- Latihan -->
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Latihan
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
+                                body.</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <nav aria-label="...">
+            <ul class="pagination me-3 justify-content-end fixed-bottom">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#">Previous</a>
+                </li>
+                <li class="page-item active" aria-current="page">
+                    <span class="page-link">1</span>
+                </li>
+                <li class="page-item"><a class="page-link" href="materi12.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="materi12.html">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <script>
+        let arrow = document.querySelectorAll(".arrow");
+        for (var i = 0; i < arrow.length; i++) {
+            arrow[i].addEventListener("click", (e) => {
+                let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
+                arrowParent.classList.toggle("showMenu");
+            });
+        }
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".bx-menu");
+        console.log(sidebarBtn);
+        sidebarBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        });
+    </script>
+    <script src="../vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="../js/materi11.js"></script>
+</body>
+
+</html>

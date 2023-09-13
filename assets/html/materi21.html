@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/pengantar_materi.css" />
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.css" />
+    <link href="../vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Logo -->
+    <link href="../img/Logo.png" rel="icon">
+
+    <!-- Mathjax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+    <div class="sidebar close">
+        <div class="logo-details">
+            <img src="../img/mathematics.png" alt="Home" style="width: 35px; height: 35px" />
+            <span class="logo_name">Sistem Persamaan</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <div class="icon-link">
+                    <a href="#">
+                        <img src="../img/mathematics.png" alt="mathematics " style="width: 35px; height: 35px" />
+                        <span class="link_name">Pengantar</span>
+                    </a>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="pengantar_materi.html">Pengantar</a></li>
+                    <li><a href="pengantar_materi.html">Sistem Persamaan Linier</a></li>
+                    <li><a href="pengantar_latihan.html">Latihan</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="icon-link">
+                    <a href="#">
+                        <img src="../img/matrix.png" alt="Matriks" style="width: 35px; height: 35px" />
+                        <span class="link_name">Materi 1</span>
+                    </a>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="materi11.html">Materi 1</a></li>
+                    <li><a href="materi11.html">Augmented Matriks</a></li>
+                    <li><a href="materi12.html">OBE</a></li>
+                    <li><a href="#">Latihan</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="icon-link">
+                    <a href="#">
+                        <img src="../img/algebra.png" alt="algebra" style="width: 35px; height: 35px" />
+                        <span class="link_name">Materi 2</span>
+                    </a>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="materi21.html">Materi 2</a></li>
+                    <li><a href="materi21.html">Bentuk Eselon</a></li>
+                    <li><a href="#">Eliminasi Gauss</a></li>
+                    <li><a href="#">Eliminasi Gauss-Jordan</a></li>
+                    <li><a href="#">Latihan</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../img/quiz.png" alt="quiz" style="width: 35px; height: 35px" />
+                    <span class="link_name">Evaluasi</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Evaluasi</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="profile-details">
+                    <div class="profile-content">
+                        <img src="../img/Logo.png" alt="profileImg" />
+                    </div>
+                    <div class="name-job">
+                        <div class="profile_name">Supiani Hasan</div>
+                        <div class="job">Mahasiswa</div>
+                    </div>
+                    <!-- <i class="bx bx-log-out"></i> -->
+                </div>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <div class="home-menu">
+            <i class="bx bx-menu"></i>
+            <span class="text">Sistem Persamaan Linier</span>
+            <a href="../../index.html">
+                <i class="bx bx-home bx-md"></i>
+            </a>
+        </div>
+
+        <div class="container-fluid px-4 my-2 text-end" style="background-color: white">
+            <strong>Sistem Persamaan Linier / Bentuk Eselon</strong>
+        </div>
+
+        <div class="card"
+            style="margin: 20px 20px 40px 20px; height: 430px; overflow-x: hidden; overflow-y: auto;border: 3px inset #5c77e6;">
+            <div class="card-body">
+                <h3>Bentuk Eselon</h3>
+                <hr>
+
+                <p class="text">Pada Bagian ini akan diberikan prosedur yang sistematis untuk menyelesaikan sistem
+                    persamaan linier, prosedur tersebut berdasarkan pada gagasan untuk mereduksi augmented matriks
+                    menjadi bentuk yang cukup sederhana sehingga sistem persamaan tersebut dapat kita selesaikan dengan
+                    memeriksa sistem tersebut.</p>
+                <p class="text">Pada contoh sebelumnya, kita telah menyelesaikan sistem linier dengan variabel x, y, dan
+                    z dengan memperoleh augmented matriks sebagai berikut:
+                    \begin{bmatrix}
+                    1 & 0 & 0 & 1\\
+                    0 & 1 & 0 & 2\\
+                    0 & 0 & 1 & 3 \\
+                    \end{bmatrix}</p>
+                <p class="text">dalam hal ini solusi sistem tersebut adalah x = 1, y = 2, z = 3. Contoh ini merupakan
+                    contoh matriks yang dinyatakan dalam bentuk <em>eselon baris tereduksi.</em>
+                </p>
+
+                <p class="text">
+                    Bentuk eselon terbagi menjadi 2 yaitu <b>eselon baris dan eselon baris tereduksi</b>. Suatu matriks
+                    dapat menjadi bentuk <em>eselon baris</em>, harus mempunyai sifat-sifat berikut ini:
+                </p>
+                <ol>
+                    <li>Jika baris tidak terdiri seluruhnya dari nol, maka bilangan taknol pertama dalam baris tersebut
+                        haruslah 1. (ini dinamakan dengan <b>1 utama</b>).</li>
+                    <li>Jika terdapat baris yang seluruhnya terdiri dari taknol, maka semua baris seperti itu
+                        dikelompokkan bersama-sama dibagian bawah matriks</li>
+                    <li>Dalam sembarang 2 baris yang berurutan yang seluruhnya tidak terdiri dari nol, maka 1 utama
+                        dalam baris yang lebih rendah terletak lebih jauh ke kanan dari 1 utama dalam baris yang lebih
+                        tinggi.</li>
+                </ol>
+                <p class="text">
+                    Sedangkan untuk Suatu matriks dapat menjadi bentuk <em>eselon baris tereduksi</em>, matriks tersebut
+                    harus mempunyai sifat-sifat berikut ini:
+                </p>
+                <ol>
+                    <li>Jika baris tidak terdiri seluruhnya dari nol, maka bilangan taknol pertama dalam baris tersebut
+                        haruslah 1. (ini dinamakan dengan <b>1 utama</b>).</li>
+                    <li>Jika terdapat baris yang seluruhnya terdiri dari taknol, maka semua baris seperti itu
+                        dikelompokkan bersama-sama dibagian bawah matriks</li>
+                    <li>Dalam sembarang 2 baris yang berurutan yang seluruhnya tidak terdiri dari nol, maka 1 utama
+                        dalam baris yang lebih rendah terletak lebih jauh ke kanan dari 1 utama dalam baris yang lebih
+                        tinggi.</li>
+                    <li>Masing masing kolom yang mengandung 1 utama mempunyai nol di tempat lain.</li>
+                </ol>
+                <div class="card my-3" style="border-color: #5c77e6;">
+                    <div class="card-header" style="background-color: #5c77e6;">
+                        <strong class="text-center text-white">Contoh 1</strong>
+                    </div>
+
+                    <div class="card-body">
+                        <p>Diberikan augmented matriks yang telah dioperasikan dengan OBE sebagai
+                            berikut.
+                            \begin{bmatrix}
+                            1 & 4 & -3 & 7\\
+                            0 & 1 & 6 & 2\\
+                            0 & 0 & 1 & 3 \\
+                            \end{bmatrix}
+                        </p>
+                        <p class="text">
+                            Kita akan mengidentifikasi apakah matriks tersebut berada dalam bentuk eselon baris atau
+                            eselon baris tereduksi.
+                        </p>
+                        <em>*klik tombol dibawah untuk melihat penjelasan.</em>
+                        <div class="tombol-contoh">
+                            <p>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#contoh1" role="button"
+                                    aria-expanded="false" aria-controls="contoh1">Sifat 1</a>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#contoh2" aria-expanded="false" aria-controls="contoh2">Sifat
+                                    2</button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#contoh3" aria-expanded="false" aria-controls="contoh3">Sifat
+                                    3</button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#contoh4" aria-expanded="false" aria-controls="contoh4">Sifat
+                                    4</button>
+                            </p>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="collapse multi-collapse" id="contoh1">
+                                        <div class="card card-body">
+                                            <img src="../img/materi 2-1 contoh1-1.jpg" alt="sifat 1">
+                                            <p class="text">
+                                                Setiap baris memiliki bilangan 1 pada bilangan taknol pertama (1 utama).
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="collapse multi-collapse" id="contoh2">
+                                        <div class="card card-body">
+                                            <img src="../img/materi 2-1 contoh1-2.jpg" alt="sifat 2">
+                                            <p class="text">
+                                                karena pada matriks tersebut tidak memiliki baris yang semua terdiri
+                                                dari nol, maka kita tidak perlu mengubah posisi baris pada matriks.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="collapse multi-collapse" id="contoh3">
+                                        <div class="card card-body">
+                                            <img src="../img/materi 2-1 contoh1-3.jpg" alt="sifat 3">
+                                            <p class="text">
+                                                1 utama pada baris kedua sedikit lebih ke kanan atau berada pada kolom
+                                                ke-2 daripada 1 utama pada baris pertama yang berada pada kolom ke-1.
+                                                dan juga 1 utama baris ketiga lebih ke kanan atau berada pada kolom ke-3
+                                                daripada 1 utama pada baris ke-2.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="collapse multi-collapse" id="contoh4">
+                                        <div class="card card-body">
+                                            <img src="../img/materi 2-1 contoh1-4.jpg" alt="sifat 4">
+                                            <p class="text">
+                                                matriks tersebut tidak memenuhi sifat 4 karena pada setiap kolom yang
+                                                memiliki 1 utama mempunyai bilangan selain nol.
+                                                <b>Karena tidak memenuhi sifat yang ke-4 maka matriks tersebut memiliki
+                                                    bentuk <em>eselon baris</em></b>.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav aria-label="...">
+            <ul class="pagination me-3 justify-content-end fixed-bottom">
+                <li class="page-item">
+                    <a class="page-link" href="materi11.html">Previous</a>
+                </li>
+                <li class="page-item" aria-current="page">
+                    <a class="page-link" href="materi21.html">1</a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <script>
+        let arrow = document.querySelectorAll(".arrow");
+        for (var i = 0; i < arrow.length; i++) {
+            arrow[i].addEventListener("click", (e) => {
+                let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
+                arrowParent.classList.toggle("showMenu");
+            });
+        }
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".bx-menu");
+        console.log(sidebarBtn);
+        sidebarBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        });
+    </script>
+    <script src="../vendor/bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>
